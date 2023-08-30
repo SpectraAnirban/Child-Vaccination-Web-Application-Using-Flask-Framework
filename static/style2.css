@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.profile-buttons {
+    display: flex;
+ margin-left: 7%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Button Styles */
+.delete-confirm-btn,
+.delete-cancel-btn {
+    padding: 8px 16px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-confirm-btn {
+    background-color: #ff5555;
+    color: white;
+}
+
+.delete-cancel-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    padding-top: 150px;
+    width: 18%;
+    background: transparent; /* Semi-transparent background */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a, li h2 {
+    display: block;
+    color: #090808;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+li a:hover:not(.active) {
+  background-color: #16d5c5;
+  color: #000000;
+    border-radius: 10px 10px 10px 10px;
+}
+li a.active {
+  background-color: #18b7b7;
+  color: #000000;
+    border-radius: 10px 10px 10px 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Evenly distribute columns */
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 20px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+    background: transparent; /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(138, 102, 14, 0.37); /* Shadow for depth */
+}
+
+.grid-container > div h1 {
+    color: #080809;
+    margin-top: 0; /* Adjust top margin for better alignment */
+    font-size: 40px;
+}
+
+.grid-container > div h3 {
+    color: #000000;
+    margin-top: 15px; /* Add some space below h3 elements */
+    display: flex;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px;
+    margin: 20px;
+}
+
+.profile p {
+    margin: 5px 0;
+    color: #090a0a;
+}
+
+.profile strong {
+    font-weight: bold;
+}
+
+.profile a {
+    color: #007bff; /* Blue color for link */
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+/* Add these styles to your existing stylesheet */
+
+.flash-messages {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flash-messages li {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.flash-messages .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.flash-messages .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}

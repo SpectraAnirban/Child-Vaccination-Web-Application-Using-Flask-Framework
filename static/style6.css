@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+  color: white;
+}
+#banner
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(4, 9, 9, 0.4)), url(./img/adminback.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+.logo
+{
+    width: 100px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+    margin-left: 20px;
+  padding: 0;
+    padding-top: 200px;
+  width: 19%;
+  background:transparent;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li h2{
+    display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+
+li a:hover:not(.active) {
+  background-color: #000000;
+  color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+.container {
+  padding: 2rem 0rem;
+  padding-top: 100px;
+    color: white;
+}
+li a.active {
+  background-color: #000000;
+  color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+p{
+    font-size: x-large;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+input{
+        width: 40%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    color: #faf4f4;
+    outline: none;
+    resize: none;
+
+}
+
+input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgb(0, 0, 0);
+  }
+input[type=submit]
+{
+        background: #071a67;
+        margin-left: 120px;
+}
+
+

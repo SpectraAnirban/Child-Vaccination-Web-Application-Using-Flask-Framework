@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Child Vaccination</title>
+</head>
+<body>
+ <section id="banner">
+     <div class="logo">
+      <a href="/">            <img src="../static/img/logo_white.png"></a>
+</div>
+     <ul>
+            <li><a href="/login"><i class="fa-solid fa-user-secret fa-beat"></i> Login</a></li>
+
+
+     </ul>
+     <div class="grid-container">
+           <div class="grid-item">
+               <div class="banner-text">
+
+                 <h1> Child Vaccination System</h1>
+                   <p> Vaccines help your body create protective antibodies—proteins that help it fight off infections.<br> By getting vaccinated, you can protect yourself and also avoid spreading preventable diseases to other people in your community.<span id="dots">...</span><span id="more"> Vaccines help your immune system fight infections more efficiently by sparking your immune response to specific diseases. Then, if the virus or bacteria ever invades your body in the future, your immune system will already know how to fight it.</span></p>
+               <button onclick="myFunction()" id="myBtn" class="button button">Read more</button>
+               </div>
+           </div>
+         <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  <div class="grid-item">
+
+
+  </div>
+     </div>
+
+     
+
+
+ </section>
+ <section id="abc">
+<h1 style="text-align:center; margin-bottom: 30px; font-size: 40px;">Our Services</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../static/img/book_appointment.png" alt="Jane" style="height:60%">
+      <div class="container">
+        <h2>Schedule</h2>
+
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../static/img/schedule.png" alt="Mike" style="height:50%">
+      <div class="container">
+        <h2>Book Appointment</h2>
+
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../static/img/report.png" alt="John" style="height:60%">
+      <div class="container">
+        <h2>Tracking</h2>
+
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+     </section>
+</body>
+</html>

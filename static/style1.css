@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+
+            background: white;
+
+}
+
+button {
+       background-color: #1a2d8d;
+        width: 100%;
+        color: #fcfbfb;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+      font-size: 20px;
+      border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+button:hover {
+    background-color: #10cde5;
+    opacity: 0.9;
+}
+ form {
+        border: 3px solid rgba(241, 241, 241, 0);
+    }
+ label{
+     color: #060707;
+ }
+ input[type=text], input[type=password], input[type=email], input[type=re-password]{
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: flex;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #000000;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+
+
+
+ .container {
+        padding: 0px;
+        background:transparent;
+
+    }
+.container a{
+    color: #040505;
+    font-family: 'Goblin One', cursive;
+    font-size: small;
+    padding-top: 0px;
+}
+ .logo
+{
+    width: 100px;
+    position: relative;
+    top: 1%;
+    left: 25%;
+
+}
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr; /* Equal width columns */
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item {
+    padding: 0px;
+    font-size: 30px;
+}
+
+.grid-item1 {
+    padding-right: 100px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.half-screen-image {
+    width: 100%;
+
+
+    max-width: 87%; /* Ensures the image doesn't exceed its original size */
+
+}
+
+
+ /* Media Queries for Responsive Design */
+
+/* Adjusting layout and padding for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 5px;
+        padding-top: 100px;
+    }
+
+    .grid-item h1 {
+        padding-left: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .logo {
+        top: 2%;
+        left: 2%;
+    }
+}
+
+/* Adjusting font sizes and padding for even smaller screens */
+@media screen and (max-width: 480px) {
+    button {
+        font-size: 18px;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=re-password] {
+        padding: 10px 16px;
+    }
+
+    .grid-item {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+.password-input {
+    position: relative;
+}
+
+#typepass {
+    padding-right: 40px; /* Add space for the icon */
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

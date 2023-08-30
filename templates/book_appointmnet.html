@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3.css') }}" />
+
+</head>
+<body>
+<section id="banner">
+    <div class="logo">
+        <a href="/user-home"><img src="../static/img/logo.png"></a>
+    </div>
+    <div style="margin-left:22%;padding:10px 26px;height:auto;">
+    <div class="form">
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+                <form action="/book" method="POST">
+                    <div class="formbold-mb-5">
+                        <label for="child-name" class="formbold-form-label">Child Name</label>
+                        <input type="text" name="child_name" id="child-name" placeholder="Patient's Full Name" class="formbold-form-input" required>
+                    </div>
+                    <div class="formbold-mb-5">
+                        <label for="phone" class="formbold-form-label">Contact Number</label>
+                        <input type="tel" name="contact_number" id="phone" placeholder="Enter your phone number" class="formbold-form-input" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                    </div>
+                                <div class="formbold-mb-5">
+                <label for="birthdate" class="formbold-form-label">Date of birth:</label>
+                <input type="date" id="birthdate" name="birthdate" class="formbold-form-input" required>
+            </div>
+                    <div class="formbold-mb-5">
+                        <label class="formbold-form-label">Gender:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="formbold-mb-5">
+                        <label for="hospital" class="formbold-form-label">Select Hospital</label>
+                        <select name="hospital" id="hospital" required>
+                            {% for hospital in hospitals %}
+                            <option value="{{ hospital.id }}">{{ hospital.username }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="formbold-mb-5">
+                        <label for="appointment-date" class="formbold-form-label">Appointment Date and Time</label>
+                        <input type="datetime-local" name="appointment_date" id="appointment-date" class="formbold-form-input" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="formbold-btn">Book Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+</html>
